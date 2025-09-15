@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FlowHabits</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, #6366f1 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, #8b5cf6 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, #ec4899 0%, transparent 50%);
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            z-index: -1;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .back-link {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+
+        .back-link:hover {
+            background: rgba(99, 102, 241, 0.1);
+            color: #8b5cf6;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 48px;
+            position: relative;
+        }
+
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #ffffff, #d1d5db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 32px 0 16px;
+            color: #6366f1;
+        }
+
+        p, li {
+            color: #d1d5db;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .email {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .email:hover {
+            color: #8b5cf6;
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: #9ca3af;
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            .header {
+                padding: 40px 0 30px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .content {
+                padding: 32px 24px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="grain"></div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="logo">FlowHabits</div>
+            <a href="index.html" class="back-link">← Back to Support</a>
+        </div>
+
+        <div class="content">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: January 15, 2025</p>
+            
+            <h2>Information We Collect</h2>
+            <p>FlowHabits is designed with privacy in mind. We collect minimal information necessary to provide our services:</p>
+            <ul>
+                <li><strong>Habit Data:</strong> Your habit completion data, progress tracking, and flow preferences are stored locally on your device and synced via Apple's CloudKit (when signed in with Apple ID)</li>
+                <li><strong>Usage Analytics:</strong> Anonymous usage statistics to improve app performance and user experience (can be disabled in app Settings)</li>
+                <li><strong>Account Information:</strong> Only your Apple ID for data synchronization purposes (if you choose to enable sync)</li>
+                <li><strong>Subscription Information:</strong> Payment and subscription status managed through Apple's App Store</li>
+            </ul>
+            
+            <h2>How We Use Your Information</h2>
+            <p>Your information is used exclusively for the following purposes:</p>
+            <ul>
+                <li>To provide personalized habit guidance and track your progress</li>
+                <li>To sync your data securely across your devices via Apple CloudKit</li>
+                <li>To improve app performance and user experience through anonymous analytics</li>
+                <li>To provide customer support when you contact us</li>
+                <li>To process subscription payments through Apple's App Store</li>
+            </ul>
+            
+            <h2>Data Sharing and Third Parties</h2>
+            <p>We do not sell, trade, rent, or share your personal information with third parties. Your habit data belongs to you and stays with you. The only data sharing that occurs is:</p>
+            <ul>
+                <li>Secure synchronization via Apple CloudKit (encrypted and controlled by Apple)</li>
+                <li>Anonymous, aggregated analytics for app improvement purposes</li>
+                <li>Subscription processing through Apple's App Store</li>
+            </ul>
+            
+            <h2>Data Security</h2>
+            <p>We implement industry-standard security measures to protect your information:</p>
+            <ul>
+                <li>All data is encrypted both in transit and at rest</li>
+                <li>CloudKit synchronization uses end-to-end encryption</li>
+                <li>Local data is protected by iOS security features and device encryption</li>
+                <li>No sensitive data is stored on external servers</li>
+            </ul>
+            
+            <h2>Your Rights and Control</h2>
+            <p>You have complete control over your data and privacy:</p>
+            <ul>
+                <li>Export your habit data at any time through the app</li>
+                <li>Delete your account and all associated data</li>
+                <li>Disable analytics collection in app Settings</li>
+                <li>Use the app entirely offline without any data collection</li>
+                <li>Control data synchronization settings</li>
+            </ul>
+            
+            <h2>Subscription Information</h2>
+            <p>FlowHabits offers auto-renewable subscriptions:</p>
+            <ul>
+                <li><strong>FlowHabits Premium Monthly:</strong> $4.99/month, automatically renews monthly</li>
+                <li><strong>FlowHabits Premium Yearly:</strong> $29.99/year, automatically renews annually</li>
+                <li>Subscriptions are managed through your Apple ID and App Store account</li>
+                <li>Cancel anytime through App Store settings</li>
+                <li>No refunds for partial subscription periods</li>
+            </ul>
+            
+            <h2>Children's Privacy</h2>
+            <p>FlowHabits is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information.</p>
+            
+            <h2>International Users</h2>
+            <p>FlowHabits is available worldwide through the App Store. Your data remains on your device and Apple's CloudKit infrastructure, which complies with applicable data protection laws including GDPR for European users.</p>
+            
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy periodically to reflect changes in our practices or applicable laws. Significant changes will be communicated through:</p>
+            <ul>
+                <li>In-app notifications</li>
+                <li>Email notifications (if you've provided contact information)</li>
+                <li>Updates to this page with revised "Last updated" date</li>
+            </ul>
+            
+            <h2>Contact Information</h2>
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+            <p>Email: <a href="mailto:lifeforge.co@gmail.com" class="email">lifeforge.co@gmail.com</a></p>
+            <p>We will respond to privacy-related inquiries within 48 hours.</p>
+            
+            <h2>Legal Compliance</h2>
+            <p>This Privacy Policy complies with applicable privacy laws including the California Consumer Privacy Act (CCPA), General Data Protection Regulation (GDPR), and Apple's App Store Review Guidelines.</p>
+        </div>
+    </div>
+</body>
+</html>

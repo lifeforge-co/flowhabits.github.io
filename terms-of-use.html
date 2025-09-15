@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - FlowHabits</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, #6366f1 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, #8b5cf6 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, #ec4899 0%, transparent 50%);
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            z-index: -1;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .back-link {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+
+        .back-link:hover {
+            background: rgba(99, 102, 241, 0.1);
+            color: #8b5cf6;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 48px;
+            position: relative;
+        }
+
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #ffffff, #d1d5db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 32px 0 16px;
+            color: #6366f1;
+        }
+
+        p, li {
+            color: #d1d5db;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .email {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .email:hover {
+            color: #8b5cf6;
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: #9ca3af;
+            margin-bottom: 32px;
+        }
+
+        .highlight {
+            background: rgba(99, 102, 241, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #6366f1;
+            margin: 24px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            .header {
+                padding: 40px 0 30px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .content {
+                padding: 32px 24px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="grain"></div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="logo">FlowHabits</div>
+            <a href="index.html" class="back-link">← Back to Support</a>
+        </div>
+
+        <div class="content">
+            <h1>Terms of Use</h1>
+            <p class="last-updated">Last updated: January 15, 2025</p>
+            
+            <h2>Acceptance of Terms</h2>
+            <p>By downloading, installing, or using the FlowHabits mobile application ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+            
+            <h2>Description of Service</h2>
+            <p>FlowHabits is a habit-building application that provides:</p>
+            <ul>
+                <li><strong>Title of Service:</strong> FlowHabits - Guided Habit Building App</li>
+                <li><strong>Core Features:</strong> Guided flow experiences for habit development, progress tracking, and personalized recommendations</li>
+                <li><strong>Free Features:</strong> Access to one complete habit flow and basic progress tracking</li>
+                <li><strong>Premium Features:</strong> Access to all habit flows, advanced analytics, customization options, and priority support</li>
+            </ul>
+            
+            <h2>Subscription Information</h2>
+            <div class="highlight">
+                <p><strong>Auto-Renewable Subscriptions:</strong></p>
+                <ul>
+                    <li><strong>FlowHabits Premium Monthly:</strong> $4.99 per month, automatically renews every month</li>
+                    <li><strong>FlowHabits Premium Yearly:</strong> $29.99 per year, automatically renews every 12 months</li>
+                </ul>
+                <p><strong>Subscription Length:</strong> Continuous access to premium features for the duration of your active subscription period.</p>
+                <p><strong>Content Provided:</strong> During each subscription period, you receive unlimited access to all premium habit flows, advanced analytics, customization tools, and priority customer support.</p>
+            </div>
+            
+            <h2>Payment and Billing</h2>
+            <ul>
+                <li>Subscriptions are charged to your Apple ID account through the App Store</li>
+                <li>Payment is charged upon confirmation of purchase</li>
+                <li>Subscriptions automatically renew unless auto-renewal is disabled at least 24 hours before the current period ends</li>
+                <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+                <li>You can manage and cancel subscriptions in your Apple ID account settings</li>
+                <li>No refunds are provided for unused portions of subscription periods</li>
+            </ul>
+            
+            <h2>User Account and Responsibilities</h2>
+            <p>When using FlowHabits, you agree to:</p>
+            <ul>
+                <li>Provide accurate information when creating an account</li>
+                <li>Use the App only for personal, non-commercial purposes</li>
+                <li>Not share your account credentials with others</li>
+                <li>Not attempt to reverse engineer, modify, or distribute the App</li>
+                <li>Not use the App for any illegal or unauthorized purposes</li>
+                <li>Respect the intellectual property rights of the App and its content</li>
+            </ul>
+            
+            <h2>Privacy and Data Protection</h2>
+            <p>Your privacy is important to us. Our data practices are governed by our Privacy Policy, which is incorporated into these Terms by reference. By using the App, you consent to the collection and use of your information as outlined in the Privacy Policy.</p>
+            
+            <h2>Intellectual Property Rights</h2>
+            <p>FlowHabits and all its content, features, and functionality are owned by LifeForge and are protected by copyright, trademark, and other intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use the App for personal purposes only.</p>
+            
+            <h2>Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law:</p>
+            <ul>
+                <li>FlowHabits is provided "as is" without warranties of any kind</li>
+                <li>We are not liable for any indirect, incidental, or consequential damages</li>
+                <li>Our total liability shall not exceed the amount you paid for the App in the past 12 months</li>
+                <li>We do not guarantee that the App will be error-free or continuously available</li>
+            </ul>
+            
+            <h2>Health and Wellness Disclaimer</h2>
+            <div class="highlight">
+                <p><strong>Important:</strong> FlowHabits is designed for general wellness and habit-building purposes. It is not intended to provide medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals regarding your health and wellness decisions.</p>
+            </div>
+            
+            <h2>Termination</h2>
+            <p>These Terms remain in effect until terminated by either party. You may terminate your use of the App at any time by:</p>
+            <ul>
+                <li>Deleting the App from your device</li>
+                <li>Canceling your subscription through App Store settings</li>
+                <li>Contacting us to delete your account</li>
+            </ul>
+            <p>We may terminate or suspend your access to the App if you violate these Terms.</p>
+            
+            <h2>Updates and Changes</h2>
+            <ul>
+                <li>We may update the App periodically to add features, fix bugs, or improve performance</li>
+                <li>These Terms may be updated from time to time with notice through the App or this website</li>
+                <li>Continued use of the App after changes constitutes acceptance of the updated Terms</li>
+            </ul>
+            
+            <h2>Governing Law</h2>
+            <p>These Terms are governed by the laws of the jurisdiction in which LifeForge operates, without regard to conflict of law principles. Any disputes will be resolved through binding arbitration or in the appropriate courts of that jurisdiction.</p>
+            
+            <h2>App Store Terms</h2>
+            <p>Your use of FlowHabits is also subject to Apple's App Store Terms of Service. In case of any conflict between these Terms and Apple's terms, Apple's terms shall prevail regarding your relationship with Apple.</p>
+            
+            <h2>Contact Information</h2>
+            <p>If you have questions about these Terms of Use, please contact us:</p>
+            <p>Email: <a href="mailto:lifeforge.co@gmail.com" class="email">lifeforge.co@gmail.com</a></p>
+            <p>We will respond to inquiries within 48 hours.</p>
+            
+            <h2>Severability</h2>
+            <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect. The unenforceable provision will be replaced with an enforceable provision that most closely reflects the original intent.</p>
+        </div>
+    </div>
+</body>
+</html>
